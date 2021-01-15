@@ -10,7 +10,8 @@ exports.handler = async (event) => {
         // Export settings
         var exportSettings = {
         type: 'png',
-        options: event
+        options: event,
+        scale: 5
         };
 
         // Set up a pool of PhantomJS workers
